@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PlaceholderComponent implements OnInit {
   @Input() header = true;
+  @Input() lines = 7;
 
   constructor() { }
 
