@@ -12,6 +12,6 @@ import { ElementsHomeComponent } from './elements-home/elements-home.component';
   imports: [
     CommonModule,
     ElementsRoutingModule
-  ],
+  ]
 })
 export class ElementsModule { }
