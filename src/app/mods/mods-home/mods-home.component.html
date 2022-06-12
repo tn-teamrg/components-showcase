@@ -1,1 +1,17 @@
-<p>mods-home works!</p>
+
+<app-divider>
+	Modal Component
+</app-divider>
+
+<button (click)="onClick()">Show Modal</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+	<!-- * NOTE: custom attribute "modalTitle" -->
+	<div modalTitle> [REUSABLE MODAL HEADER] </div>
+	<p>[REUSABLE MODAL CONTENT]</p>
+
+	<!-- * NOTE: custom atribute "modalFooter" -->
+	<!-- <ng-container modalFooter>
+		<button class="ui button" (click)="onClick()">CLOSE ME</button>
+	</ng-container> -->
+
+</app-modal>
